@@ -8,5 +8,8 @@ web_data=cgi.FieldStorage()# store complete data of html page
 
 #extracting variables from html page
 x=web_data.getvalue('n1')
+print(type(x))  #to get to know the type of values receiving
 y=web_data.getvalue('n2')
+print(type(y))  #to get to know the type of values receiving
+
 print(x+y)
